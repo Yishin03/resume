@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My simple Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: rgba(19, 48, 40, 0.986);
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 100%px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #232e30da;
+      height: 100%;
+    }
+  
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .try {background-color: rgba(252, 247, 247, 0);
+  
+
+} .try1{background-color: rgba(233, 224, 224, 0);
+  
+}
+
+
+
+/* Position text in the middle of the page/image */
+.bg-container {
+  background-color: rgb(247, 243, 243); /* Fallback color */
+  background-color: rgb(10, 85, 56); /* Black w/opacity/see-through */
+  font-weight: bold;
+  border: 3px solid #f5f5f500;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/**************BBBBBBBBOOODDDDDYYYYYY BACKGROUND *******************/
+body {
+
+ background-image: url("strips.jpg");
+ background-color: #cccccc;}
+
+/**************BBBBBBBBOOODDDDDYYYYYY BACKGROUND *******************/
+
+
+
+
+
+/************** LLLOOOGGGGGOOOOO PPPPAAARRRTTT *******************/
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #d31414;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(37, 8, 8);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/************** LLLOOOGGGGGOOOOO PPPPAAARRRTTT *******************/
+
+
+    
+</style>
+</head>
+<body>
+    
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+       </button>
+
+
+      <a class="navbar-brand" href="logo.jpg">
+          <img id="myImg" src="logo.jpg" alt="Show" style="width:50%;max-width:60px">
+
+
+
+
+          
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li class="#"><a href="Index.html">Home</a></li>
+            <li><a href="educational.html">Education</a></li>
+                        <li><a href="experiences.html">Experiences and seminars</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div> 
+
+<div class="bg-container">
+  <div class="row content">
+    <div class="col-sm-2 sidenav" >
+        <p style="color:rgb(37, 186, 255); font-family:
+        'Times New Roman', Times, serif; font-size: large;" class=text-left><br><br><br>Personal Profile
+</p>
+        <p style="color:rgb(37, 186, 255); font-family: 
+        'Times New Roman', Times, serif; font-size: small;" class=text-left><br>Age:  <br> 25 Years Old <br><br>
+       Gender :  <BR>Female<br><br>
+       Date Of Birth :<br>  October 11,1994 <br><br>
+       Civil Status : <br> Single <br><br>
+       Nationality : <br>  Filipino <br>
+       <br><br><br><br><br><br>
+        </p>
+        
+      
+        <br> 
+    </div>
+    
+      <div class="col-sm-7 text-left"> 
+      <h1 style="color:rgb(205, 205, 255); font-family: Georgia, 'Times New Roman', Times, serif; ">Christea Linn Enad Escudero</h1>
+      
+      <h4 class="text-left try1"
+       style="color: rgb(219, 215, 233);
+        font-family:serif;">Objective</h4>
+
+      
+      <p class="text-left try1"
+       style="color:rgb(236, 230, 228); 
+       font-family: 'Times New Roman', Times, 
+       serif; font-size: large;">
+
+        Pursuing opportunity which will allow me to grow professionally, <br>
+         while effectively
+         utilizing my versatile skill set to help promote your
+          corporate mission and exceed team goals
+      </p>   
+    </div>
+    <div class="col-sm-3 sidenav">
+      
+    <img src="images/idimage2.jpg"  class="img-circle" alt="Cinque Terre" width="200" height="200"> 
+    
+    </div>
+
+      
+     
+      <div class="col-sm-3 text-left try">
+          <h3 class="text-left try1" style="color: rgb(219, 215, 233); font-family: Impact, 
+          Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Skills
+      </p></h2>
+
+         <p style="color:rgb(236, 230, 228); font-family: 
+         'Times New Roman', Times, serif; font-size: large;">
+        Programming Language   -   HTML5  <br>
+        css <br>
+        Javascript <br>
+        jquery<br>
+        Arduino<br>
+        Javaj2se/j2ee<br>
+        
+         <br><br>
+</p> 
+      </div>
+
+
+      <div class="col-sm-4 text-left try">
+          <h3 class="text-left try1" style="color: rgb(219, 215, 233); font-family: Impact, 
+          Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Hardware And Networking
+      </p></h2>
+
+         <p style="color:rgb(236, 230, 228); font-family: 
+         'Times New Roman', Times, serif; font-size: large;">Computer Hardware Trouble Shooting<br>
+        Micro Computer For Robotics( raspberry pi)<br>
+        Basic Networking<br>
+        
+        
+         <br><br>
+</p> 
+
+
+      </div>
+      <div class="col-sm-3 text-left try">  
+         <br><br>
+
+         <p class=text-left> <p style="color:rgb(25, 170, 85)"><span class="glyphicon glyphicon-envelope">  Email Address  <br>
+          <a href="mailto:webmaster@example.com">christealinn@gmail.com
+           <a href="mailto:webmaster@example.com">venus_enad@yahoo.com</a></p></span></a></p>
+           <br>
+        <p style="color:rgb(25, 170, 85)"> <span class="glyphicon glyphicon-home">   Home Address </p>
+          <p style="color:rgb(0, 162, 255)"> #1047 BLdg.10 4th Flr.<br>
+         MRB Compound <br>Pilot Drive,<br> Brgy Commonwealth Quezon city </p>  </span></a></p>
+
+         <br>
+            <p class=text-left> <p style="color:rgb(25, 170, 85)"><span class="glyphicon glyphicon-phone">    Phone Number 
+          <p style="color:rgb(0, 162, 255)">  #09260659913 </span> </p> </a></p>
+</p> 
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
